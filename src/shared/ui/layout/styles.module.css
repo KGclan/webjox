@@ -1,0 +1,9 @@
+.wrapper {
+  min-height: 100vh;
+  align-items: center;
+  @apply flex flex-col justify-between;
+}
+
+:global(.dark) .wrapper {
+  @apply bg-sky-900;
+}

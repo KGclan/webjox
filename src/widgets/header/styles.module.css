@@ -1,0 +1,19 @@
+.header {
+  @apply w-full h-14 bg-slate-200 flex items-center justify-around;
+}
+
+:global(.dark) .header {
+  @apply bg-sky-700;
+}
+
+.nav {
+  @apply flex gap-5;
+}
+
+.link {
+  @apply text-black font-medium;
+}
+
+:global(.dark) .link {
+  @apply text-white;
+}

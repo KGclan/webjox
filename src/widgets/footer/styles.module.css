@@ -1,0 +1,7 @@
+.footer {
+  @apply w-full h-10 bg-slate-300;
+}
+
+:global(.dark) .footer {
+  @apply bg-sky-700;
+}
