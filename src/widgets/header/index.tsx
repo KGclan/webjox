@@ -10,9 +10,8 @@ const Header = () => {
     <header className={styles.header}>
       <ThemeSwitcher />
       <nav className={styles.nav}>
-        <Link className={styles.link} to="/">Главная</Link>
-        <Link className={styles.link} to="/">Создать сетку</Link>
-        <Link className={styles.link} to="/">Список сеток</Link>
+        <Link className={styles.link} to="/">Список турниров</Link>
+        <Link className={styles.link} to="/addBracket">Создать турнир</Link>
       </nav>
     </header>
   );

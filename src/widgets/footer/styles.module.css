@@ -1,7 +1,7 @@
 .footer {
-  @apply w-full h-10 bg-slate-300;
+  @apply w-full bg-slate-300 h-14 border-t border-slate-400;
 }
 
 :global(.dark) .footer {
-  @apply bg-sky-700;
+  @apply bg-sky-700 border-sky-900;
 }

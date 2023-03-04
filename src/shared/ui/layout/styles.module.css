@@ -1,5 +1,6 @@
 .wrapper {
   min-height: 100vh;
+  width: 100%;
   align-items: center;
   @apply flex flex-col justify-between;
 }

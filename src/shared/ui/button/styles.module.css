@@ -1,0 +1,7 @@
+.button {
+  @apply p-2 h-10 bg-black text-white rounded font-medium;
+}
+
+:global(.dark) .button {
+  @apply text-black bg-white;
+}

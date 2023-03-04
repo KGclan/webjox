@@ -1,0 +1,39 @@
+.form {
+  @apply bg-slate-200 h-auto p-5 w-full flex flex-col gap-5 items-center rounded border border-slate-300;
+}
+
+:global(.dark) .form {
+  @apply bg-sky-700 text-white border-sky-900;
+}
+
+.inputsGroup {
+  @apply flex items-start gap-2 flex-col w-11/12;
+}
+
+.button {
+  @apply bg-black text-white p-2
+}
+
+.input {
+  @apply w-full h-8 outline-slate-300 rounded p-3;
+}
+
+:global(.dark) .input {
+  @apply bg-sky-800 outline-sky-900;
+}
+
+.textarea {
+  @apply w-full h-96 outline-slate-300 rounded p-3 resize-none;
+}
+
+:global(.dark) .textarea {
+  @apply bg-sky-800 outline-sky-900;
+}
+
+.checkbox {
+  @apply h-5 w-5;
+}
+
+.title {
+  @apply text-3xl;
+}
