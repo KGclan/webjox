@@ -5,3 +5,11 @@
 :global(.dark) .button {
   @apply text-black bg-white;
 }
+
+.button:hover {
+  @apply bg-white text-black transition;
+}
+
+:global(.dark) .button:hover {
+  @apply bg-black text-white transition;
+}

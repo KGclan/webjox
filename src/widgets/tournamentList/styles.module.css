@@ -14,6 +14,14 @@
   @apply w-full flex justify-center border border-black rounded;
 }
 
+.link:hover {
+  @apply bg-white transition;
+}
+
 :global(.dark) .link {
   @apply border-white text-white;
+}
+
+:global(.dark) .link:hover {
+  @apply bg-sky-900 transition;
 }
