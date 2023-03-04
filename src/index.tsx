@@ -2,8 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import App from "app";
-import { ThemeProvider } from "@material-tailwind/react";
-
 import reportWebVitals from "./reportWebVitals";
 
 import "app/styles/index.css";
@@ -13,9 +11,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <ThemeProvider>
-      <App />
-    </ThemeProvider>
+    <App />
   </React.StrictMode>
 );
 

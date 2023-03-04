@@ -1,0 +1,55 @@
+{
+  "tournaments": [
+    {
+      "id": 1,
+      "name": "tournament #1",
+      "rounds": [
+        {
+          "id": 1,
+          "title": "Round one",
+          "seeds": [
+            {
+              "id": 1,
+              "teams": [
+                {
+                  "name": "Team A"
+                },
+                {
+                  "name": "Team B"
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "teams": [
+                {
+                  "name": "Team C"
+                },
+                {
+                  "name": "Team D"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Round two",
+          "seeds": [
+            {
+              "id": 3,
+              "teams": [
+                {
+                  "name": "Team A"
+                },
+                {
+                  "name": "Team C"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

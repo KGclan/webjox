@@ -2,7 +2,7 @@ import React from "react";
 
 import Footer from "widgets/footer";
 import Header from "widgets/header";
-import FormOfAdd from "widgets/formOfAdd";
+import FormOfAdd from "features/formOfAdd";
 import { Layout } from "shared/ui";
 
 const AddBracket = () => {

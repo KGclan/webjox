@@ -5,3 +5,7 @@
 :global(.dark) .button {
   @apply text-black bg-white;
 }
+
+.button:disabled {
+  @apply bg-slate-400;
+}
