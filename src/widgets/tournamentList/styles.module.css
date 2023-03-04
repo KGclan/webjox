@@ -1,0 +1,19 @@
+.list {
+  @apply bg-slate-200 h-96 overflow-x-auto gap-6 p-5 w-full flex flex-col items-center rounded border border-slate-300;
+}
+
+:global(.dark) .list {
+  @apply bg-sky-700 text-white border-sky-900;
+}
+
+.item {
+  @apply w-full flex justify-center;
+}
+
+.link {
+  @apply w-full flex justify-center border border-black rounded;
+}
+
+:global(.dark) .link {
+  @apply border-white text-white;
+}

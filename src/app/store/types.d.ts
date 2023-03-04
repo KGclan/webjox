@@ -1,1 +1,1 @@
-declare type RootState = ReturnType<typeof import("./index").store.getState>;
+export declare type RootState = ReturnType<typeof import("./index").store.getState>;

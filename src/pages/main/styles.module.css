@@ -1,0 +1,11 @@
+.main {
+  @apply w-1/3 flex flex-col gap-5 items-center;
+}
+
+.title {
+  @apply font-semibold text-2xl;
+}
+
+:global(.dark) .title {
+  @apply text-white;
+}

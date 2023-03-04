@@ -17,9 +17,15 @@ const tournamentModel = createSlice({
   reducers: {
     setTournamentsList: (state, { payload }: PayloadAction<APIModels.ITournament[]>) => {
       state.tournaments = payload;
-    }
+    },
+    setLoading: (state, { payload }: PayloadAction<boolean>) => {
+      state.isListLoading = payload;
+    },
+    addItemToTournamentsList: (state, { payload }: PayloadAction<APIModels.ITournament>) => {
+      state.tournaments = [payload, ...state.tournaments as APIModels.ITournament[]];
+    },
   }
 });
 
-export const { setTournamentsList } = tournamentModel.actions;
+export const { setTournamentsList, setLoading, addItemToTournamentsList } = tournamentModel.actions;
 export const reducer = tournamentModel.reducer;
