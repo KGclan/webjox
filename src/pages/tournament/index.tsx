@@ -9,7 +9,7 @@ import Footer from "widgets/footer";
 import { tournamentModel } from "entities/tournament";
 import CustomSeed from "entities/seed";
 import { APIRequests } from "shared/api";
-import { Layout } from "shared/ui";
+import { Layout, Spinner } from "shared/ui";
 
 import styles from "./styles.module.css";
 
@@ -43,7 +43,7 @@ const Tournament = () => {
                 }}
               />
             </main>
-          ) : <div>Загрузка...</div>
+          ) : <Spinner />
       }
     </Layout>
   );

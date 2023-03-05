@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import { Spinner } from "shared/ui";
+
 import { useTournamentList } from "./hooks";
 
 import styles from "./styles.module.css";
@@ -10,8 +12,8 @@ const TournamentList = () => {
 
   if (isListLoading) {
     return (
-      <ul className={styles.list}>
-        <p>Загрузка...</p>
+      <ul className={styles.spinWrapper}>
+        <Spinner />
       </ul>
     );
   }

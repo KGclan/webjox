@@ -1,0 +1,13 @@
+.preLoaderWrapper {
+  @apply bg-slate-300 w-screen h-screen flex align-middle justify-center;
+}
+
+:global(.dark) .preLoaderWrapper {
+  @apply bg-sky-700;
+}
+
+.spinnerWrapper {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+}
