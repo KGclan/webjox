@@ -8,7 +8,7 @@ import { Layout } from "shared/ui";
 const AddTournament = () => {
   return(
     <Layout header={<Header />} footer={<Footer />}>
-      <main className="w-1/3">
+      <main className="w-1/3 py-10 max-xl:w-2/3 max-lg:w-3/4 max-md:w-full max-md:text-sm">
         <FormOfAdd />
       </main>
     </Layout>
