@@ -41,7 +41,7 @@ export const useForm = () => {
     // А соответсвенно гарантируем, что в каждом раунде у участника будет соперник
     if (!(countOfTeams && (countOfTeams & (countOfTeams - 1)) === 0)) {
       setTextareaError("Число команд должно быть кратно степени 2");
-    } else if (countOfTeams === 1) {
+    } else if (countOfTeams === 1 || countOfTeams === 2) {
       setTextareaError("Число командо должно быть больше");
     } else setTextareaError("");
 

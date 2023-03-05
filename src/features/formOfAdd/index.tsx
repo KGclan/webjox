@@ -21,11 +21,23 @@ const FormOfAdd = () => {
       <h1 className={styles.title}>Добавить турнир</h1>
       <div className={styles.inputsGroup}>
         <label htmlFor="tournirName">Название турнира</label>
-        <input onChange={inputChangeHandler} className={styles.input} type="text" id="tournirName" />
+        <input
+          style={{ outline: inputError ? "1px solid red" : "" }}
+          onChange={inputChangeHandler}
+          className={styles.input}
+          type="text"
+          id="tournirName"
+        />
+        <p className={styles.error}>{inputError}</p>
       </div>
       <div className={styles.inputsGroup}>
         <label htmlFor="textarea">Участники турнира(по одному в каждой строке)</label>
-        <textarea onChange={textareaChangeHandler} className={styles.textarea} id="textarea" />
+        <textarea
+          style={{ outline: textareaError ? "1px solid red" : "" }}
+          onChange={textareaChangeHandler}
+          className={styles.textarea} id="textarea"
+        />
+        <p className={styles.error}>{textareaError}</p>
       </div>
       <div className={styles.inputsGroup}>
         <label htmlFor="checkbox">Сортировать участников в случайном порядке</label>

@@ -7,7 +7,7 @@
 }
 
 .inputsGroup {
-  @apply flex items-start gap-2 flex-col w-11/12;
+  @apply flex items-start gap-2 flex-col w-11/12 relative;
 }
 
 .button {
@@ -36,4 +36,8 @@
 
 .title {
   @apply text-3xl;
+}
+
+.error {
+  @apply absolute -bottom-6 text-red-500;
 }
