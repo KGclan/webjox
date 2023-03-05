@@ -24,27 +24,36 @@ const seedsCreator = (members: IMember[] | null, length: number) => {
 const roundsCreator = (members: IMember[]) => {
   let rounds = [];
   let length = members.length;
+  let i = 0;
 
-  for (let i = 0; i < (length / 2); i++) {
-    rounds.push(
-      {
-        id: i,
-        title: `Раунд №${i + 1}`,
-        seeds: i ? seedsCreator(null, length) : seedsCreator(members, length),
-      },
-    );
+  while ((length / 2) >= 2) {
+    if ((length / 2) === 2) {
+      // Пушим фильный и полуфинальный раунд
+      rounds.push(
+        {
+          id: rounds.length + 1,
+          title: "Полуфинал",
+          seeds: seedsCreator(null, 4),
+        },
+        {
+          id: rounds.length + 1,
+          title: "Финал",
+          seeds: seedsCreator(null, 2),
+        },
+      );
+    } else {
+      rounds.push(
+        {
+          id: i,
+          title: `Раунд №${i}`,
+          seeds: i ? seedsCreator(null, length) : seedsCreator(members, length),
+        },
+      );
+    }
 
-    length /= 2;
+    length = length / 2;
+    i++;
   }
-
-  // Пушим фильный раунд
-  rounds.push(
-    {
-      id: rounds.length + 1,
-      title: "Финал",
-      seeds: seedsCreator(members, 2),
-    },
-  );
 
   return rounds;
 };
