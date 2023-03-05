@@ -5,7 +5,7 @@ import Header from "widgets/header";
 import FormOfAdd from "features/formOfAdd";
 import { Layout } from "shared/ui";
 
-const AddBracket = () => {
+const AddTournament = () => {
   return(
     <Layout header={<Header />} footer={<Footer />}>
       <main className="w-1/3">
@@ -15,4 +15,4 @@ const AddBracket = () => {
   );
 };
 
-export default AddBracket;
+export default AddTournament;

@@ -2,7 +2,7 @@
   min-height: 100vh;
   width: 100%;
   align-items: center;
-  @apply flex flex-col justify-between;
+  @apply flex flex-col justify-between overflow-auto;
 }
 
 :global(.dark) .wrapper {

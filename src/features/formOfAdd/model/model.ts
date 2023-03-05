@@ -45,7 +45,7 @@ const roundsCreator = (members: IMember[]) => {
       rounds.push(
         {
           id: i,
-          title: `Раунд №${i}`,
+          title: `Раунд №${i + 1}`,
           seeds: i ? seedsCreator(null, length) : seedsCreator(members, length),
         },
       );

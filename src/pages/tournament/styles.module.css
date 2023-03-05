@@ -1,0 +1,15 @@
+.main {
+  @apply w-full;
+}
+
+.bracket {
+  @apply py-5 overflow-auto;
+}
+
+.bracketTitles {
+  @apply text-center text-black font-bold;
+}
+
+:global(.dark) .bracketTitles {
+  @apply text-white;
+}

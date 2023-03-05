@@ -17,4 +17,5 @@ export interface ISeed {
 
 export interface ITeam {
   name: string;
+  id?: number;
 }

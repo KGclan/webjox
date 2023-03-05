@@ -6,3 +6,4 @@ import { ITournament } from "./models";
 export const getTournamentsList = (): AxiosPromise<ITournament[]> => apiInstance.get("tournaments");
 export const addToTournamentsList =
   (tournament: ITournament): AxiosPromise<ITournament> => apiInstance.post("tournaments", tournament);
+export const getTournament = (id: number): AxiosPromise<ITournament> => apiInstance.get(`tournaments/${id}`);

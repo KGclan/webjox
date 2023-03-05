@@ -18,9 +18,9 @@ const TournamentList = () => {
 
   return(
     <ul className={styles.list}>
-      {tournaments?.map((tournament) => (
-        <li className={styles.item}>
-          <Link to={`tournament/${tournament.id}`} className={styles.link}>{tournament.name}</Link>
+      {tournaments?.map((tournament, index) => (
+        <li className={styles.item} key={index}>
+          <Link to={`bracket/${tournament.id}`} className={styles.link}>{tournament.name}</Link>
         </li>
       ))}
     </ul>

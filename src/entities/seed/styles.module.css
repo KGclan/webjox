@@ -1,0 +1,23 @@
+.seedCard {
+  @apply bg-slate-300 border border-slate-400 rounded;
+}
+
+:global(.dark) .seedCard {
+  @apply bg-sky-700 border-sky-900;
+}
+
+.seedTeam {
+  @apply text-black cursor-pointer;
+}
+
+.seedTeam:hover {
+  @apply bg-white transition;
+}
+
+:global(.dark) .seedTeam:hover {
+  @apply bg-sky-600 transition;
+}
+
+:global(.dark) .seedTeam {
+  @apply text-white;
+}
